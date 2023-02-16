@@ -12,16 +12,15 @@ window.addEventListener("load",function(){
 })
 
 function getthumb() {
-    if (vidUrl.value.includes("=")) {
-        vidId = vidUrl.value.slice((vidUrl.value.search('v=') + 2),(vidUrl.value.search('v=')+13));
+    if (vidUrl.value.includes("watch")) {
+        vidId = vidUrl.value.slice((vidUrl.value.search('v=') + 2),(vidUrl.value.search('v')+13));
         imgsrc = `https://img.youtube.com/vi/${vidId}/maxresdefault.jpg`;
-        
         img.src = imgsrc;
         imageDiv.style.display = "flex";
         a.href = imgsrc
         label.style.display ="none"
     }else if (vidUrl.value.includes("be")){
-        vidId = vidUrl.value.slice((vidUrl.value.search('be/') + 3));
+        vidId = vidUrl.value.slice((vidUrl.value.search('be/') + 3), vidUrl.value.search('be/') + 3 + 11);
         imgsrc = `https://img.youtube.com/vi/${vidId}/maxresdefault.jpg`;
         img.src = imgsrc;
         imageDiv.style.display = "flex";
