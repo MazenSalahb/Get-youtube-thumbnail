@@ -5,6 +5,11 @@ let img = document.getElementById("img");
 let a = document.getElementById("downBtn");
 let label = document.getElementById("label");
 let imgsrc;
+let loader = document.getElementById("preloader");
+
+window.addEventListener("load",function(){
+    loader.style.display = "none"
+})
 
 function getthumb() {
     if (vidUrl.value.includes("=")) {
