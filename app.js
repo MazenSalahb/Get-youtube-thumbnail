@@ -12,7 +12,7 @@ window.addEventListener("load",function(){
 })
 
 function getthumb() {
-    if (vidUrl.value.includes("watch")) {
+    if (vidUrl.value.includes("https://www.youtube.com/watch?v=")) {
         vidId = vidUrl.value.slice((vidUrl.value.search('v=') + 2),(vidUrl.value.search('v')+13));
         imgsrc = `https://img.youtube.com/vi/${vidId}/maxresdefault.jpg`;
         img.src = imgsrc;
@@ -20,7 +20,7 @@ function getthumb() {
         a.href = imgsrc
         label.style.display ="none"
         vidUrl.style.border ="1px solid #000";
-    }else if (vidUrl.value.includes("be")){
+    }else if (vidUrl.value.includes("youtu.be/")){
         vidId = vidUrl.value.slice((vidUrl.value.search('be/') + 3), vidUrl.value.search('be/') + 3 + 11);
         imgsrc = `https://img.youtube.com/vi/${vidId}/maxresdefault.jpg`;
         img.src = imgsrc;
