@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetThumb</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>احصل على الصورة المصغرة بجودتها الاصلية</h1>
+        <div class="inputs">
+            <div class="input">
+                <label for="url" id="label"> رابط الفيديو</label>
+                <input type="text" placeholder="لينك الفيديو" id="url">
+            </div>
+            <button onclick="getthumb()"><span class="btn-text">احصل</span></button>
+        </div>
+        <div class="image" id="imageDiv">
+            <img src="" id="img">
+            <a target="_blank" id="downBtn">عرض</a>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

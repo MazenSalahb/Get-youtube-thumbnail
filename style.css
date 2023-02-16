@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    position: relative;
+    text-align: center;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#label{
+    color: rgb(182, 35, 35);
+    display: none;
+}
+
+.inputs input{
+    font-family: 'Cairo', sans-serif;
+    padding: 5px 10px;
+    outline: none;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.inputs button{
+    padding: 10px 20px;
+    background-color: #0ca7aa;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Cairo', sans-serif;
+    width: 60%;
+}
+
+.inputs button:hover{
+    background-color: #0a8486;
+}
+
+.image{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0ca7aa;
+    width: 70px;
+    padding: 5px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image a:hover{
+    background-color: #0a8486;
+}
+
+img{
+    margin: 50px 0 10px 0;
+    width: 500px;
+    border-radius: 15px;
+    transition: 1.3s;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .container{
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 430px) {
+    .container{
+      width: 90%;
+    }
+    img{
+        width: 100%;
+    }
+  }
