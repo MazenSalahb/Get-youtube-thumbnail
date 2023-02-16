@@ -18,7 +18,7 @@ function getthumb() {
         img.src = imgsrc;
         imageDiv.style.display = "flex";
         a.href = imgsrc
-        label.style.display ="none"
+        label.innerHTML = "رابط الفيديو"
         vidUrl.style.border ="1px solid #000";
     }else if (vidUrl.value.includes("youtu.be/")){
         vidId = vidUrl.value.slice((vidUrl.value.search('be/') + 3), vidUrl.value.search('be/') + 3 + 11);
@@ -26,11 +26,12 @@ function getthumb() {
         img.src = imgsrc;
         imageDiv.style.display = "flex";
         a.href = imgsrc
-        label.style.display ="none"
         vidUrl.style.border ="1px solid #000";
+        label.innerHTML = "رابط الفيديو"
     }else{
         vidUrl.style.border ="1px solid red";
         label.innerHTML = "من فضلك ادخل رابط صحيح"
+        label.style.color = "red";
         label.style.display ="block"
     }
 };
